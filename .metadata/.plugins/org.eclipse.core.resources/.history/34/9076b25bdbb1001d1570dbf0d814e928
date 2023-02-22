@@ -1,0 +1,19 @@
+package com.techlabs.collection;
+import java.util.*;
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		List<String> arraylist=new ArrayList<String>();
+		arraylist.add("abc");
+		arraylist.add("lmn");
+		arraylist.add("xyz");
+		System.out.println(arraylist);
+		System.out.println("Array List Elements:");
+		for(String str:arraylist)
+		{
+			System.out.println(str);
+		}
+
+	}
+
+}

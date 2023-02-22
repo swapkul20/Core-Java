@@ -1,0 +1,28 @@
+package com.techlabs.RectangleValidation;
+
+public class Rectangle {
+	private int width;
+	private int height;
+	private String color;
+	void setWidth(int w)
+	{
+		if(w>=1 && w<=100)
+			width=w;
+		if(w<1)
+			width=1;
+		if(w>100)
+			width=100;
+	}
+	int getWidth()
+	{
+		return width;
+	}
+	void setColor(String c)
+	{
+		if(c.contentEquals("red") || c.contentEquals("black") || c.contentEquals("gray"))
+			color=c;
+		if(c.contentEquals("red")==false || c.contentEquals("black")==false || c.contentEquals("gray")==false)
+            color="red";
+	}
+
+}

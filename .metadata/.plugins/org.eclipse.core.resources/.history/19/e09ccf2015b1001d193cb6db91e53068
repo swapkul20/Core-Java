@@ -1,0 +1,16 @@
+package com.techlabs.bmi;
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+			
+		Person person=new Person("Swapnil",56,0.134);
+		double bmi=person.getBMI();
+		System.out.println(bmi);
+		System.out.println("You BMI:"+Math.round(bmi)/100);
+	    System.out.println("Your Boy Category:"+person.getBodyCategory(bmi));
+		
+
+	}
+
+}

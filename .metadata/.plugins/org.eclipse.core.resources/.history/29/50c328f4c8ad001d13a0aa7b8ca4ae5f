@@ -1,0 +1,42 @@
+package com.techlabs.cricketbooknew;
+import java.util.Scanner;
+public class Player {
+	String name1;
+	String name2;
+    int pagenumber;
+    int score1;
+    int score2;
+    int turn1;
+    int turn2;
+    Scanner sc1;
+    int flag=0;
+    int i;
+    void acceptPlayer()
+    {
+    	sc1=new Scanner(System.in);
+    	System.out.println("Enter name of player1:");
+    	name1=sc1.next();
+    	System.out.println("Enter name of player2:");
+    	name2=sc1.next();
+    	for(i=0;i<12;i++)
+    	{
+    		pagenumber=(int) Math.floor(Math.random() *(300 - 1 + 1) + 1);
+      		System.out.println(name1+"  reading page number:"+pagenumber);
+    		score1=score1+(pagenumber%7);
+    		if(pagenumber%7==0)
+    		{
+    			turn1=i;
+    			flag=1;
+    			break;
+    		}
+    			
+    	  }
+    	if(flag==1)
+    	    System.out.println("Total Score of "+name1+" is:"+score1+" in "+turn1);
+    	else
+    		System.out.println("Total Score of "+name1+" is:"+score1+" in "+(i-1));
+    	
+    	
+    }
+
+}

@@ -1,0 +1,11 @@
+package com.techlabs.cricketbooknew;
+
+public class bookcricket {
+
+	public static void main(String[] args) {
+		Player p=new Player();
+		p.acceptPlayer();
+
+	}
+
+}

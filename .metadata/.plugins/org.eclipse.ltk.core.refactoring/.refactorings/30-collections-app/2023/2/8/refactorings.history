@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract local variable &apos;entrySet&apos; from expression &apos;(Map.Entry&lt;Integer,String&gt;)hashmap.entrySet()&apos;&#x0D;&#x0A;- Original project: &apos;30-collections-app&apos;&#x0D;&#x0A;- Variable name: &apos;entrySet&apos;&#x0D;&#x0A;- Destination method: &apos;com.techlabs.collection.HashMapTest.main()&apos;&#x0D;&#x0A;- Variable expression: &apos;(Map.Entry&lt;Integer,String&gt;)hashmap.entrySet()&apos;&#x0D;&#x0A;- Replace occurrences of expression with variable" description="Extract local variable &apos;entrySet&apos;" final="false" id="org.eclipse.jdt.ui.extract.temp" input="/src&lt;com.techlabs.collection{HashMapTest.java" name="entrySet" replace="true" selection="313 45" stamp="1677039778354" varType="false" version="1.0"/>
+</session>

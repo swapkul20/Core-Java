@@ -1,0 +1,17 @@
+package com.techlabs.exceptionhandling;
+
+public class InsufficientFundException extends RuntimeException {
+	
+	String message;
+	public InsufficientFundException() {
+		this("Insufficient Fund");
+		
+	}
+
+	public InsufficientFundException(String message) {
+		
+		super(message);
+	}
+	
+
+}

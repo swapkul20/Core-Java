@@ -1,0 +1,45 @@
+package com.techlabs.employeepoly;
+
+public class Manager2 extends Employee{
+	private double hra;
+	private double da;
+	private double ta;
+	//private double ctc;
+
+	public Manager2(int eno, String name, double basic) {
+		super(eno,name,basic);
+		calculateDetails();
+		
+	}
+	private void calculateDetails()
+	{
+		hra=(getBasic()*50)/100;
+		da=(getBasic()*40)/100;
+		ta=(getBasic()*30)/100;
+	}
+	public double getHra()
+	{
+		return hra;
+	}
+	public double getDa()
+	{
+		return da;
+	}
+	public double getTa()
+	{
+		return ta;
+	}
+	
+	public void calculateAnnualCtc()
+	{
+		ctc=getBasic()+hra+da+ta;
+		System.out.println("HRA:"+hra);
+		System.out.println("DA:"+da);
+		System.out.println("TA:"+ta);
+	}
+	public double getCtc()
+	{
+		return ctc;
+	}
+
+}

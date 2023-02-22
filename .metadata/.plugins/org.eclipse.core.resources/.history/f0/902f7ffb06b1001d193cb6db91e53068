@@ -1,0 +1,5 @@
+package com.techlabs.abstractaccount;
+
+public class CurrentAccount {
+
+}

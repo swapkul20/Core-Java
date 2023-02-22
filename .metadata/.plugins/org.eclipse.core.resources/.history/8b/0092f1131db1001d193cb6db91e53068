@@ -1,0 +1,9 @@
+package com.techlabs.employeepoly;
+
+public class Developer {
+
+	public Developer() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

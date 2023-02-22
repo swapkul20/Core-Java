@@ -1,0 +1,40 @@
+package com.techlabs.exceptionhandling;
+
+public class ExceptionTest2 {
+
+	public static void main(String[] args) {
+		try
+		{
+			m1();
+		}
+		catch(Exception e) 
+		{
+			System.out.println(e);
+		}
+
+	}
+	static void m1()
+	{
+		m2();
+		System.out.println("Exiting m1");
+	}
+	static void m2()
+	{
+		m3();
+		System.out.println("Exiting m2");
+	}
+	static void m3()
+	{
+		try
+		{
+		System.out.println("Inside m3");
+		throw new RuntimeException();
+		}
+		catch(NullPointerException e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+
+}

@@ -1,0 +1,28 @@
+package com.techlabs.accountinfo;
+import java.util.Scanner;
+public class AccountTest {
+
+	public static void main(String[] args) {
+		Scanner sc1=new Scanner(System.in);
+		Account account1=new Account(450,"AAA",1000);
+		showAccount(account1);
+		System.out.println("Enter amount to withdraw:");
+		double amount=sc1.nextDouble();
+		account1.withdraw(amount);
+		showAccount(account1);
+		System.out.println("Enter amount to deposit:");
+		amount=sc1.nextDouble();
+		account1.deposit(amount);
+		showAccount(account1);
+		
+
+	}
+	static void showAccount(Account acount)
+	{
+		System.out.println("Account Number:"+acount.getAccno());
+		System.out.println("Account Holder:"+acount.getName());
+		System.out.println("Account Balance:"+acount.getBalance());
+		
+	}
+
+}

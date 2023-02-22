@@ -1,0 +1,62 @@
+package com.techlabs.bmi;
+
+public class Person {
+	private String name;
+	private double height;
+	private double weight;
+	private double bmi;
+	
+	Person()
+	{
+		this(null,0,0);
+	}
+	Person(String name,double height,double weight)
+	{
+		this.name=name;
+		this.height=height;
+		this.weight=weight;
+	}
+	void setName(String name)
+	{
+		this.name=name;
+	}
+	String getName()
+	{
+		return name;
+	}
+	void setHeight(double h)
+	{
+		height=h;
+	}
+	double getHeight()
+	{
+		return height;
+	}
+	void setWeight(double w)
+	{
+		weight=w;
+	}
+	double getWeight()
+	{
+		return weight;
+	}
+	double getBMI()
+	{
+		return weight/(height*height);
+	}
+	String getBodyCategory()
+	{
+		String category=null;
+		if(bmi<18.5)
+			category="Underweight";
+		if(bmi>=18.5 && bmi<=24.9)
+			category="Healthy Weight";
+		if(bmi>=25 && bmi<=30)
+			category="Overweight";
+		if(bmi>30)
+			category="Obses Range";
+		
+		return category;	
+	}
+
+}

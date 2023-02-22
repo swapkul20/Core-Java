@@ -1,0 +1,15 @@
+package com.techlabs.bmi;
+
+public class PersonTest {
+
+	public static void main(String[] args) {
+			
+		Person person=new Person("aaa",56,0.134);
+		double bmi=person.getBMI();
+		System.out.println("You BMI:"+bmi);
+	    System.out.println("Your Boy Category:"+person.getBodyCategory(bmi));
+		
+
+	}
+
+}

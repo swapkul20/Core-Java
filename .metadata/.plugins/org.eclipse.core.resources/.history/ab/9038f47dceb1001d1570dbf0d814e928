@@ -1,0 +1,43 @@
+package com.techlabs.exceptionhandling;
+
+public class ExceptionTest3 {
+
+	public static void main(String[] args) {
+		
+	
+			System.out.println("Inside main");
+			m1();
+			
+		
+		
+		System.out.println("Exiting main");
+
+	}
+	
+	static void m1()
+	{
+		System.out.println("Inside m1");
+		m2();
+		System.out.println("Exiting m1");
+	}
+	static void m2()
+	{
+		System.out.println("Inside m2");
+		m3();
+		System.out.println("Exiting m2");
+	}
+	static void m3()
+	{
+		try
+		{
+		System.out.println("Inside m3");
+		throw new Exception();
+		}
+		catch(RuntimeException e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("Exiting m3");
+	}
+
+}

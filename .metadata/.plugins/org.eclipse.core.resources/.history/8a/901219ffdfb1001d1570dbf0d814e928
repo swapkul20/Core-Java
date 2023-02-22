@@ -1,0 +1,10 @@
+package com.techlabs.collection;
+
+public class QueueLinkedListTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
