@@ -1,6 +1,6 @@
 package com.techlabs.interfaces;
 
-public abstract class Person {
+ interface IPerson {
 	abstract void say();
 
 }
