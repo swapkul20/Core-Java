@@ -1,16 +1,19 @@
 package com.techlabs.lamdas;
 
+import java.util.function.Predicate;
+
 public class PredicateDemo {
 
 	public static void main(String[] args) {
 		int a=Integer.parseInt(args[0]);
-		int b=Integer.parseInt(args[1]);
-		Predicate<Integer> predicate=(x,y) -> x>y;
-		Consumer<Integer> consumer=x->System.out.println(x+"is greater");
-		if(predicate.test(a,b))
-			consumer.accept(a);
+		
+		Predicate<Integer> predicate=(x) -> x%2==0;
+		
+		if(predicate.test(a))
+		   System.out.println("Even");
 		else
-			consumer.accept(b);
+			System.out.println("Odd");
+			
 		
 
 	}

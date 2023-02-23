@@ -1,5 +1,6 @@
 package com.techlabs.lamdas;
 import java.util.*;
+import java.util.function.Predicate;
 public class PredicateDemo2 {
 
 	public static void main(String[] args) {

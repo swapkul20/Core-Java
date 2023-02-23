@@ -1,5 +1,7 @@
 package com.techlabs.lamdas;
 
+import java.util.function.Supplier;
+
 public class SupplierDemo {
 
 	public static void main(String[] args) {
