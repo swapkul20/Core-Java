@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.*;
 
 
-public class MaxStreamTest {
+public class MinStreamTest {
 
 	public static void main(String[] args) {
 		List<Student> students=Arrays.asList(new Student(1,"a",90), new Student(2,"b",75), new Student(3,"c",85));
@@ -20,16 +20,16 @@ public class MaxStreamTest {
         	}	
         	
         };
-        System.out.println("Student having Highest Percentage:");
-        Optional<Student> highest=students.stream().max(comparator);
+        System.out.println("Student having Lowest Percentage:");
+        Optional<Student> highest=students.stream().min(comparator);
         System.out.println(highest.get());
         
-        System.out.println("Student having Maximum Roll Number:");
+        System.out.println("Student having Lowest Roll Number:");
         
-        System.out.println(students.stream().max((s1,s2)->s1.getRno()-s2.getRno()).get());
+        System.out.println(students.stream().min((s1,s2)->s1.getRno()-s2.getRno()).get());
         
-        System.out.println("Student having Highest Percentage:");        
-        System.out.println(students.stream().max((s1,s2)->(int)Math.ceil(s1.getPercentage()-s2.getPercentage())).get());
+        System.out.println("Student having Lowest Percentage:");        
+        System.out.println(students.stream().min((s1,s2)->(int)Math.ceil(s1.getPercentage()-s2.getPercentage())).get());
         
         
 	}
