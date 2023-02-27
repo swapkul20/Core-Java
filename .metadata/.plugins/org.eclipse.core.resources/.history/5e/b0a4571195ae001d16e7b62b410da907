@@ -1,5 +1,0 @@
-package com.techlabs.accessmodifiers.pck2;
-
-public class OutsidePackageSubDemo {
-
-}

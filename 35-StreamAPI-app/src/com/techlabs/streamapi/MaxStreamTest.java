@@ -32,6 +32,9 @@ public class MaxStreamTest {
         System.out.println(students.stream().max((s1,s2)->(int)Math.ceil(s1.getPercentage()-s2.getPercentage())).get());
         
         
+        Student student = students.parallelStream().min(Comparator.comparingDouble(Student::getPercentage)).get();
+        
+        System.out.println(student);
 	}
 
 }
