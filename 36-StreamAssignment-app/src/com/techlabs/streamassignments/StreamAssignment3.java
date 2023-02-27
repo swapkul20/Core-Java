@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class StreamAssignment3 {
 
 	public static void main(String[] args) {
-		String[] names= {"Jayesh","Nimesh","Mahesh","Ramesh"};
+		String[] names= {"Jayesh","Nimesh","Mark","Mahesh","Ramesh"};
 		List<String> namelist=Arrays.asList(names);
 		System.out.println("first 3 students sorted in ascending order:");
 		namelist.stream().limit(3).sorted().forEach(name->System.out.println(name));

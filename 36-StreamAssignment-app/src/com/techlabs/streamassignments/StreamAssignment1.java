@@ -1,6 +1,7 @@
 package com.techlabs.streamassignments;
 
 import java.util.Arrays;
+import java.util.function.Consumer;
 
 public class StreamAssignment1  {
 
@@ -14,7 +15,10 @@ public class StreamAssignment1  {
 		
 		System.out.println("Using Static method reference:");
         IStramTest itest=StreamAssignment1::display;
-        itest.print(names);    
+        itest.print(names); 
+        
+       Consumer<String[]> consumer=StreamAssignment1::display;
+       consumer.accept(names);
            
 	}
 	public static void display(String names[])
