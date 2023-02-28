@@ -1,9 +1,0 @@
-package com.techlabs.employeepoly;
-
-public class Accountant {
-
-	public Accountant() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
