@@ -1,0 +1,51 @@
+package com.techlabs.movie;
+
+import java.io.Serializable;
+
+public class Movie implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int id;
+	private String name;
+	private int year;
+	private Genre genre;
+	public Movie(int id, String name, int year, Genre genre) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.year = year;
+		this.genre = genre;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	public Genre getGenre() {
+		return genre;
+	}
+	public void setGenre(Genre genre) {
+		this.genre = genre;
+	}
+	@Override
+	public String toString() {
+		return "Movie [id=" + id + ", name=" + name + ", year=" + year + ", genre=" + genre + "]";
+	}
+	
+
+}

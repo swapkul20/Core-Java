@@ -1,6 +1,0 @@
-package com.techlabs.gitdemo;
-
-public class Test2 {
-	System.out.println("Hi");
-
-}
